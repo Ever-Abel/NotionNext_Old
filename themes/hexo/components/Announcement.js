@@ -7,8 +7,8 @@ const Announcement = ({ post, className }) => {
   const { locale } = useGlobal()
   if (post?.blockMap) {
     return <div className={className}>
-        <section id='announcement-wrapper' className="dark:text-gray-300 border dark:border-black rounded-xl lg:p-10 p-4 bg-white dark:bg-hexo-black-gray">
-            <div><i className='mr-2 fas fa-bullhorn' />{locale.COMMON.ANNOUNCEMENT}</div>
+        <section id='announcement-wrapper' className="dark:text-gray-300 border dark:border-black rounded-xl lg:p-16 p-10 bg-white dark:bg-hexo-black-gray">
+            <div><i className='mr-2 fas fa-bullhorn text-xl' />{locale.COMMON.ANNOUNCEMENT}</div>
             {post && (<div id="announcement-content">
             <NotionPage post={post} className='text-center' />
         </div>)}
